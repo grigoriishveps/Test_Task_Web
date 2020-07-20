@@ -1,0 +1,591 @@
+.App {
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.giraffeCard{
+  width: 230px;
+  min-heigth: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  padding: 10px 20px  30px 20px;
+  background: #F3DBC7;
+  border-radius: 28px;
+  margin: 20px 40px 20px 0px;
+}
+.giraffeCard label{
+  justify-self: center;
+  align-self: center;
+}
+.giraffeBox{
+  display: flex;
+  flex-direction: row;
+}
+
+.panegiraffe{
+  background: white;
+  width: 100%;
+  height: 95%;
+  min-height: 95vh;
+  border-radius: 52px;
+  margin: 15px;
+  padding: 30px 50px ;
+  color: #435F40;
+}
+
+#mainPage{
+  display: flex;
+  /*min-height: 90vh;*/
+}
+
+hr {
+  /*width: 1090px;*/
+  height: 3px;
+
+  border: none; /* Убираем границу */
+  background-color: #D9D9D9; /* Цвет линии */
+  color: #D9D9D9; /* Цвет линии для IE6-7 */
+  height:4px; /* Толщина линии */
+
+  border-radius: 18px;
+  margin-top: -4px;
+  padding-top: -5px;
+}
+
+#menu{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+
+}
+
+.menuButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 237px;
+  height: 51px;
+  background: #567354;
+  border-radius: 52px;
+  margin: 15px;
+  color: white;
+  padding-left: 15px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  border: none;
+}
+.menuButton:hover {
+  background: white;
+  color: #567354;
+}
+.menuButton:hover img{
+  filter: none;
+}
+
+.menuButton span{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+
+}
+.menuButton img{
+  Fill: #F3DBC7;
+  margin-right: 20px;
+  filter: brightness(0) invert(1);
+}
+#boxIcon{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  margin-bottom: 5px;
+}
+
+#boxChar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+  margin-left: 0;
+  background: #DCB18B;
+  border-radius: 58px;
+  width: 189px;
+  height: 39px;
+}
+
+.characteristic{
+  display: flex;
+  width: 170px;
+  height:27px;
+  margin: 0 0 0 10px;
+
+  text-align: left;
+  padding: 3px;
+}
+.charField{
+  min-width: auto;
+  outline: none;
+  background: inherit;
+  margin-top: 5px;
+  font-family: Roboto;
+  font-style: normal;
+
+  font-size: 15px;
+  line-height: 18px;
+  border: 0;
+  color: #435F40;
+}
+.addButton{
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: none;
+  background: #D9D9D9;
+  padding: 2px;
+}
+
+.addButton img{
+  transform:scale(0.6, 0.6) ;
+  filter: brightness(0) invert(1);
+}
+
+.addButton:hover{
+  background: #668663;
+}
+
+.addGir{
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: none;
+  background: #668663;
+  padding: 7px;
+  margin-left: 20px;
+}
+
+.addGir:hover{
+  border:blue;
+  border-width: 2px;
+  background: #567354;
+}
+
+.addGir img{
+  margin-top:1px;
+  transform:scale(1, 1);
+  filter: brightness(0) invert(1);
+}
+
+.listHeaders{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  outline: none;
+  border:none;
+  background: inherit;
+  padding: 0px 10px  20px 10px;
+  margin-top: 0px;
+  color: #D9D9D9;
+}
+.listHeaders:hover{
+  color: #435F40;
+  font-weight: bold;
+}
+.activelistHeader{
+  border-bottom: #567354 solid 3px ;
+  color: #484848;
+}
+.accountHat{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+}
+.hat{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adMargin{
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+
+.photoImg{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.inlineBox{
+  display: flex;
+  align-items: center;
+}
+
+/*sum menu*/
+.dws-menu{
+  align-self: flex-end;
+  width: 23px;
+  height: 23px;
+
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+.dws-menu  a{
+  font-family: Font Awesome;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  color: #435F40;
+
+}
+
+.dws-menu div{
+  display: none;
+  min-width: 150px;
+  position: absolute;
+  width: 174px;
+  height: 94px;
+  margin-top: -2px;
+  margin-bottom: -2px;
+  padding: 10px ;
+  background: #668663;
+  border-radius: 20px;
+  color: white;
+  transition-delay: 10s;
+}
+
+.dws-menu:hover  div{
+  display: block;
+}
+
+.dws-menu  button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 151px;
+  height: 32px;
+  background: #567354;
+  border-radius: 52px;
+  margin: 3px;
+  color: white;
+  padding-left:6px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  border: none;
+}
+
+.dws-menu  span{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+}
+.dws-menu  img{
+  Fill: #F3DBC7;
+  margin-right: 10px;
+}
+
+.dws-menu  button:hover{
+  background: white;
+  color: #567354;
+
+}
+
+.infoPage{
+  position: absolute;
+  width: 506px;
+  height: 137px;
+  left: 50%;
+  top: 700px;
+
+  background: #668663;
+  border-radius: 28px;
+  padding: 15px;
+}
+.infoPage div{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.infoPage h1{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  color: #FFFFFF;
+  margin:5px;
+  margin-right: 15px;
+}
+.infoPage span{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 5px;
+  margin-bottom: 15px;
+}
+
+progress {
+  height: 31px;
+  width: 323px;
+
+  border-radius: 35px;
+  background: #435F40;
+  border: 0;
+}
+
+progress::-webkit-progress-bar {
+  height: 31px;
+  width: 323px;
+  border-radius: 35px;
+  background: #435F40;
+  padding: 4px;
+}
+
+progress::-webkit-progress-value {
+  border-radius: 35px;
+  background: #F3DBC7;
+
+}
+progress::-moz-progress-bar {
+  border-radius: 35px;
+  background: #F3DBC7;
+}
+
+.infoButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 110px;
+  height: 32px;
+  background: #435F40;
+  border-radius: 35px;
+
+  margin-left: 20px;
+  color: white;
+  padding-left:6px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  border: none;
+}
+
+.saveButton{
+  width: 129px;
+  height: 39px;
+  background: #567354;
+  border-radius: 33px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  align-self: center;
+}
+
+.saveButton span{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.saveButton:active{
+  background: white;
+  color: #567354;
+  border-block: none;
+}
+
+.inputName{
+  text-align: center;
+  outline: none;
+  background: inherit;
+  border: none;
+  margin:10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #435F40;
+}
+
+.name{
+  text-align: center;
+
+}
+
+#boxChar input, #boxChar span{
+  width:40px;
+  max-length: 3;
+  text-align: center;
+  outline: none;
+  background: inherit;
+  border: none;
+  margin:10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  color: #435F40;
+  size: 30px;
+  padding-left: 5px;
+}
+
+
+
+.logComp{
+  /*display: flex;*/
+  position: absolute;
+  width: 506px;
+  height: 287px;
+  padding: 5px 35px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px #869CB0;
+  border-radius: 28px;
+}
+
+.lineLog{
+  width: 441px;
+  height: 3px;
+
+  background: #D9D9D9;
+  border-radius: 18px;
+
+}
+
+.logComp hr{
+  position: absolute;
+  width: 441px;
+  height: 1px;
+
+  background: #D9D9D9;
+  border-radius: 18px;
+
+}
+
+.logBody{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.logBody h6{
+  margin:  10px 0;
+  /*border-top*/
+}
+
+.logBody h5{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #B4B4B4;
+
+}
+
+.logHead{
+  display:flex;
+  justify-content: space-between;
+}
+
+.logHead button{
+  outline: none;
+  font-family: Font Awesome;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  color: #435F40;
+  background: inherit;
+  text-align: center;
+}
+
+.closeInfo{
+
+  width: 16px;
+  height: 21px;
+  align-self: flex-start;
+  margin-left: auto;
+  margin-right: 10px;
+  background: inherit;
+  outline: none;
+  border: 0;
+
+}
+
+.avatarMenu{
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin: 30px 15px ;
+  margin-bottom: 80px;
+}
+.avatarMenu div{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.avatarMenu img{
+  width: 59px;
+  height: 59px;
+}
+.avatarMenu h5{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 5px 10px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+.avatarMenu h6{
+  width: 63px;
+  height: 12px;
+  left: 102px;
+  top: 59px;
+  margin: 5px 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
